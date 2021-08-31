@@ -4,10 +4,12 @@
 <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
     <title> Boladale Akinpelu's Portfolio </title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" >
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fa5bf04b5b.js" crossorigin="anonymous"></script>
+
     <style type="text/css">
         body {
             margin: 0;
@@ -19,8 +21,8 @@
             width: 150px;
             border-radius: 50%;
             position: relative;
-            top:25px;
-            border:1px solid black;
+            top: 25px;
+            border: 1px solid black;
         }
 
         #profilePicLink:hover {
@@ -39,7 +41,6 @@
             background-color: white;
             height: 55px;
             width: stretch;
-           
         }
 
             #topNav ul {
@@ -48,20 +49,19 @@
                 padding: 0;
                 overflow: hidden;
                 background-color: white;
-               
             }
 
             #topNav a {
                 color: black;
             }
 
-            #topNav a:hover {
-                color: white;
-            }
-
-                #topNav .dropdown-content a:hover {
-                    color: black;
+                #topNav a:hover {
+                    color: white;
                 }
+
+            #topNav .dropdown-content a:hover {
+                color: black;
+            }
 
         li {
             float: right;
@@ -128,6 +128,25 @@
             margin-left: 10px;
         }
 
+        @media screen and (max-width:1500px) {
+            .left {
+                width: 100%;
+            }
+
+            .right {
+                width: 100%;
+                max-width: 1500px;
+            }
+
+            .column {
+                padding: 0px;
+            }
+
+            .footer {
+                position: relative;
+            }
+        }
+
         /* Clear floats after the columns */
         .row:after {
             content: "";
@@ -156,53 +175,40 @@
             padding-bottom: 20px;
             padding-left: 400px;
         }
-        
-        @media  screen and (max-width:1400px) {
-            .left {
-                width:100%;
-                
-            }
 
-            .right{
-                width:100%;
-                max-width:1500px;
-            }
-
+        @media screen and (max-width:1500px) {
             .row {
-                padding-right: 0px;
-                padding-left: 0px;
-            }
-
-            .column {
-                padding: 0px;
-            }
-
-            .footer {
-                position: relative;
+                padding-right: 200px;
+                padding-left: 200px;
             }
         }
-        
         /*Edit the contact tabs and how they look*/
         .contactTabs {
             float: left;
             color: #333;
         }
 
-        .contactTabs img{
-            float:left;
-            margin-right:5px;
-        }
+            .contactTabs img {
+                float: left;
+                margin-right: 5px;
+            }
 
-        .contactTabs i{
-            float: left;
-            margin-right: 5px;
-        }
+            .contactTabs i {
+                float: left;
+                margin-right: 5px;
+            }
 
             .contactTabs:hover {
                 box-shadow: 8px 8px 8px 0px rgba(0,0,0,0.2);
-                z-index:1;
-            } 
+                z-index: 1;
+            }
 
+        @media screen and (max-width:1500px) {
+            .contactTabs:hover {
+                box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+        }
         /*Style the Dropdown Menu*/
         li.dropdown {
             display: inline-block;
@@ -217,9 +223,9 @@
             z-index: 1;
         }
 
-        .dropdown-content:hover {
-            color:black;
-        }
+            .dropdown-content:hover {
+                color: black;
+            }
 
             .dropdown-content a {
                 color: black;
@@ -239,9 +245,9 @@
             display: block;
         }
 
-        
 
-       
+
+
         /*Style the Footer*/
         .footer {
             background-color: #F1F1F1;
@@ -254,9 +260,16 @@
             width: 100%;
             border-top: 1px solid gray;
         }
+
+        @media screen and (max-width:1500px) {
+            .footer {
+                position: initial;
+                height: 60px;
+            }
+        }
         /*style the footer content*/
         .footerContent {
-
+            background-color: #F1F1F1;
         }
 
         .leftFooterContent {
@@ -275,15 +288,13 @@
         }
 
             .footer ul li a {
-      
-            padding: 5px;
-            color: gray;
-        }
-
-            .footer a:hover {
-                background-color: transparent;
+                padding: 5px;
+                color: gray;
             }
 
+        .footer a:hover {
+            background-color: transparent;
+        }
     </style>
 </head>
 <body>
@@ -296,7 +307,7 @@
                 <a href="javascript:void(0)" class="dropbtn">PROJECTS</a>
                 <div class="dropdown-content">
                     <a href="#">Portfolio</a>
-                    <a href="#">Bookstore App</a>
+                    <a href="#">Recipe App</a>
                     <a href="#">Reaction Tester</a>
                 </div>
             </li>
@@ -325,9 +336,9 @@
             <ul>
                 <li class="contactTabs"><a href="#Name"><i class="material-icons">email</i>     Email</a></li>
                 <li class="contactTabs"><a href="#Name"><i class="material-icons">phone</i>     Number</a></li>
-                <li class="contactTabs"><a id="twitterLink" href="#Name"><img id="twitter" src="https://img.icons8.com/ios-glyphs/24/000000/twitter--v1.png" />   Twitter</a></li>
-                <li class="contactTabs"><a id="githubLink" href="#Name"><img id="gitHub" src="https://img.icons8.com/material-rounded/24/000000/github.png" />   Github</a></li>
-                <li class="contactTabs"><a id="linkedinLink" href="#Name"><img id="linkedIn" src="https://img.icons8.com/material-rounded/24/000000/linkedin--v1.png" />   Linkedin</a></li>
+                <li class="contactTabs"><a id="twitterLink" href="https://twitter.com/DaleAkinpelu"><img id="twitter" src="https://img.icons8.com/ios-glyphs/24/000000/twitter--v1.png" />   Twitter</a></li>
+                <li class="contactTabs"><a id="githubLink" href="https://github.com/DaleAkinpelu"><img id="gitHub" src="https://img.icons8.com/material-rounded/24/000000/github.png" />   Github</a></li>
+                <li class="contactTabs"><a id="linkedinLink" href="www.linkedin.com/in/boladale-akinpelu"><img id="linkedIn" src="https://img.icons8.com/material-rounded/24/000000/linkedin--v1.png" />   Linkedin</a></li>
             </ul>
         </div>
     </div>
