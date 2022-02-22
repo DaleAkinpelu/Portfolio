@@ -1,0 +1,405 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
+    <title> Boladale Akinpelu's Portfolio </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fa5bf04b5b.js" crossorigin="anonymous"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        #profilePic {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            position: relative;
+            top: 25px;
+            border: 1px solid black;
+        }
+        
+        #profilePicLink:hover {
+            background-color: transparent;
+        }
+        
+        p {
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        h2 {
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        #topNav {
+            background-color: white;
+            height: 55px;
+            width: stretch;
+        }
+        
+        #topNav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: white;
+        }
+        
+        #topNav a {
+            color: black;
+        }
+        
+        #topNav a:hover {
+            color: white;
+        }
+        
+        #topNav .dropdown-content a:hover {
+            color: black;
+        }
+        
+        li {
+            float: right;
+        }
+        
+        li a {
+            display: block;
+            padding: 16px 16px;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        a:hover {
+            background-color: #111;
+        }
+        
+        #nameTab {
+            float: left;
+        }
+        
+        #header {
+            text-align: center;
+            background-color: #ffc7c7;
+            font-size: 30px;
+            display: block;
+            padding-top: 20px;
+            padding-right: 60px;
+            padding-bottom: 20px;
+            padding-left: 60px;
+            font-family: 'Open Sans', sans-serif;
+            border-top: 1px solid red;
+            border-bottom: 1px solid red;
+            box-shadow: 16px 8px 16px 0px rgba(0, 0, 0, 0.2)
+        }
+        
+        #header a {
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        #header a:hover {
+            color: #111;
+        }
+        
+        .column {
+            float: left;
+            padding: 0px;
+        }
+        
+        .left {
+            width: 80%;
+        }
+        
+        .right {
+            width: 20%;
+            max-width: 150px;
+            margin-left: 10px;
+        }
+        
+        @media screen and (max-width:1500px) {
+            .left {
+                width: 100%;
+            }
+            .right {
+                width: 100%;
+                max-width: 1500px;
+            }
+            .column {
+                padding: 0px;
+            }
+            .footer {
+                position: relative;
+            }
+        }
+        /* Clear floats after the columns */
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .right ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        
+        .right a {
+            color: #333;
+        }
+        
+        .right a:hover {
+            color: white;
+        }
+        
+        .row {
+            padding-top: 20px;
+            padding-right: 400px;
+            padding-bottom: 20px;
+            padding-left: 400px;
+        }
+        
+        @media screen and (max-width:1500px) {
+            .row {
+                padding-right: 200px;
+                padding-left: 200px;
+            }
+        }
+        /*Edit the contact tabs and how they look*/
+        
+        .contactTabs {
+            float: left;
+            color: #333;
+        }
+        
+        .contactTabs img {
+            float: left;
+            margin-right: 5px;
+        }
+        
+        .contactTabs i {
+            float: left;
+            margin-right: 5px;
+        }
+        
+        .contactTabs:hover {
+            box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        @media screen and (max-width:1500px) {
+            .contactTabs:hover {
+                box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+            }
+        }
+        /*Style the Dropdown Menu*/
+        
+        li.dropdown {
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content:hover {
+            color: black;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+            color: black;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        /*Style the Footer*/
+        
+        .footer {
+            background-color: #F1F1F1;
+            text-align: center;
+            padding: 5px;
+            font-family: 'Open Sans', sans-serif;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            border-top: 1px solid gray;
+        }
+        
+        @media screen and (max-width:1500px) {
+            .footer {
+                position: initial;
+                height: 60px;
+            }
+        }
+        /*style the footer content*/
+        
+        .footerContent {
+            background-color: #F1F1F1;
+        }
+        
+        .leftFooterContent {
+            float: left;
+        }
+        
+        .rightFooterContent {
+            float: right;
+            padding-left: 5px;
+            padding-right: 10px;
+        }
+        /*remove Styling of ul list*/
+        
+        .footer ul {
+            list-style-type: none;
+        }
+        
+        .footer ul li a {
+            padding: 5px;
+            color: gray;
+        }
+        
+        .footer a:hover {
+            background-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="topNav">
+        <ul>
+            <li id="nameTab"><a href="index.html">BOLADALE AKINPELU</a></li>
+            <li><a href="index.html">ABOUT</a></li>
+            <li class="dropdown">
+                <a href="Projects.html" class="dropbtn">PROJECTS</a>
+                <div class="dropdown-content">
+                    <a href="https://github.com/DaleAkinpelu/Portfolio-Landing-Page" target="_blank">Portfolio</a>
+                    <!--Make a Coming soon Page-->
+                    <a href="#">Recipe App</a>
+                    <a href="https://github.com/DaleAkinpelu/Reaction-Tester" target="_blank">Reaction Tester</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div id="header">
+        <a id="profilePicLink" href="#Name"><img id="profilePic" src="DaleProfilePic.jpeg"></a>
+        <a href="#Name">
+            <div id="center">
+                <h1>Boladale Akinpelu</h1>
+            </div>
+        </a>
+    </div>
+
+    <div class="row">
+        <div class="column left">
+            <h2>About me</h2>
+            <p>Boladale Akinpelu loves programming, working out, playing video games and solving problems. I am a Software Engineering student at Ryerson University. I also enjoy developing applications, mostly front-end development of applications. I like
+                to express my creativity by designing the user interface of applications.</p>
+            <p>I am self-motivated individual with experience working in collaborative team environments to deliver highly functional results I am Able to work well in a team but can also take initiative to manage myself effectively in completing assigned
+                tasks.
+            </p>
+            <p>I am proficient in the following programming languages: JavaScript, Angular, C, C++, Java, JavaFX, HTML and CSS. I am also familiar with the following applications: Microsoft Visual Studio Code, Netbeans, Notepad++ and Visual Paradigm</p>
+
+        </div>
+        <div class="column right">
+            <h2>Contacts</h2>
+            <ul>
+                <li class="contactTabs"><a href="mailto:akinpeluboladale@gmail.com"><i class="material-icons">email</i>     Email</a></li>
+                <li class="contactTabs"><a href="tel:+6475630821"><i class="material-icons">phone</i>     Number</a></li>
+                <li class="contactTabs">
+                    <a id="twitterLink" target="_blank" href="https://twitter.com/DaleAkinpelu"><img id="twitter" src="https://img.icons8.com/ios-glyphs/24/000000/twitter--v1.png" /> Twitter</a>
+                </li>
+                <li class="contactTabs">
+                    <a id="githubLink" target="_blank" href="https://github.com/DaleAkinpelu"><img id="gitHub" src="https://img.icons8.com/material-rounded/24/000000/github.png" /> Github</a>
+                </li>
+                <li class="contactTabs">
+                    <a id="linkedinLink" target="_blank" href="www.linkedin.com/in/boladale-akinpelu"><img id="linkedIn" src="https://img.icons8.com/material-rounded/24/000000/linkedin--v1.png" /> Linkedin</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <div>
+            <ul>
+                <li class="footerContent leftFooterContent">© 2022 Boladale Akinpelu</li>
+                <li class="footerContent rightFooterContent"><a href="mailto:akinpeluboladale@gmail.com"><i class="material-icons">email</i></a></li>
+                <li class="footerContent rightFooterContent"><a href="tel:+6475630821"><i class="material-icons">phone</i></a></li>
+                <li class="footerContent rightFooterContent">
+                    <a href="https://img.icons8.com/ios-glyphs/24/000000/twitter--v1.png" target="_blank"><img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMzAiIGhlaWdodD0iMzAiCnZpZXdCb3g9IjAgMCAyMjYgMjI2IgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDIyNnYtMjI2aDIyNnYyMjZ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iIzgwODA4MCI+PHBhdGggZD0iTTIxMC45MzMzMyw1Mi4yNTg3M2MtNy4yMDk0LDMuMjAxNjcgLTE0Ljk1MzY3LDUuMzU2MiAtMjMuMDgyMTMsNi4zMjhjOC4zMDE3MywtNC45NzIgMTQuNjY3NCwtMTIuODQ0MzMgMTcuNjY1NjcsLTIyLjIzMDg3Yy03Ljc1OTMzLDQuNjAyODcgLTE2LjM2MjQsNy45NDc2NyAtMjUuNTIyOTMsOS43NTU2N2MtNy4zMjk5MywtNy44MTIwNyAtMTcuNzcxMTMsLTEyLjY5MzY3IC0yOS4zMjcyNywtMTIuNjkzNjdjLTIyLjE5MzIsMCAtNDAuMTgyOCwxNy45OTcxMyAtNDAuMTgyOCw0MC4xODI4YzAsMy4xNDg5MyAwLjM2MTYsNi4yMjI1MyAxLjAzOTYsOS4xNTNjLTMzLjM5NTI3LC0xLjY3MjQgLTYzLjAwMTI3LC0xNy42NzMyIC04Mi44MjksLTQxLjk5MDhjLTMuNDUwMjcsNS45MzYyNyAtNS40MzE1MywxMi44MzY4IC01LjQzMTUzLDIwLjIxMTkzYzAsMTMuOTM2NjcgNy4wODg4NywyNi4yMzg2IDE3Ljg2OTA3LDMzLjQ0MDQ3Yy02LjU4NDEzLC0wLjIxMDkzIC0xMi43ODQwNywtMi4wMTg5MyAtMTguMjAwNTMsLTUuMDI0NzNjMCwwLjE3MzI3IDAsMC4zMzE0NyAwLDAuNTA0NzNjMCwxOS40NzM2NyAxMy44NDYyNywzNS43MTU1MyAzMi4yMzUxMywzOS4zOTkzM2MtMy4zNjc0LDAuOTE5MDcgLTYuOTIzMTMsMS40MDg3MyAtMTAuNTkxODcsMS40MDg3M2MtMi41ODM5MywwIC01LjEwNzYsLTAuMjU2MTMgLTcuNTU1OTMsLTAuNzE1NjdjNS4xMTUxMywxNS45NjMxMyAxOS45NTU4LDI3LjU4NzA3IDM3LjUzODYsMjcuOTExYy0xMy43NDgzMywxMC43ODAyIC0zMS4wNzUsMTcuMjA2MTMgLTQ5LjkwODMzLDE3LjIwNjEzYy0zLjIzOTMzLDAgLTYuNDQxLC0wLjE4ODMzIC05LjU4OTkzLC0wLjU2NWMxNy43ODYyLDExLjM5NzkzIDM4LjkwMjEzLDE4LjA0OTg3IDYxLjYwMDA3LDE4LjA0OTg3YzczLjkxNzA3LDAgMTE0LjMyNTg3LC02MS4yMzA5MyAxMTQuMzI1ODcsLTExNC4zMzM0YzAsLTEuNzQwMiAtMC4wMzc2NywtMy40NzI4NyAtMC4xMTMsLTUuMTk4YzcuODU3MjcsLTUuNjcyNiAxNC42NzQ5MywtMTIuNzQ2NCAyMC4wNjEyNywtMjAuNzk5NTN6Ij48L3BhdGg+PC9nPjwvZz48L3N2Zz4="
+                        /></a>
+                </li>
+                <li class="footerContent rightFooterContent">
+                    <a href="https://img.icons8.com/material-rounded/24/000000/github.png" target="_blank"><img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMzAiIGhlaWdodD0iMzAiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iIzgwODA4MCI+PHBhdGggZD0iTTc4LjExNjY3LDE1LjA1Yy0zMi45NjY2NywzLjU4MzMzIC01OS40ODMzMywzMC4xIC02My4wNjY2Nyw2Mi4zNWMtMy41ODMzMywzMy42ODMzMyAxNS43NjY2Nyw2My43ODMzMyA0NS4xNSw3NS4yNWMyLjE1LDAuNzE2NjcgNC4zLC0wLjcxNjY3IDQuMywtMy41ODMzM3YtMTEuNDY2NjdjMCwwIC0yLjg2NjY3LDAuNzE2NjcgLTYuNDUsMC43MTY2N2MtMTAuMDMzMzMsMCAtMTQuMzMzMzMsLTguNiAtMTUuMDUsLTEzLjYxNjY3Yy0wLjcxNjY3LC0yLjg2NjY3IC0yLjE1LC01LjAxNjY3IC00LjMsLTcuMTY2NjdjLTIuMTUsLTAuNzE2NjcgLTIuODY2NjcsLTAuNzE2NjcgLTIuODY2NjcsLTEuNDMzMzNjMCwtMS40MzMzMyAyLjE1LC0xLjQzMzMzIDIuODY2NjcsLTEuNDMzMzNjNC4zLDAgNy44ODMzMyw1LjAxNjY3IDkuMzE2NjcsNy4xNjY2N2MzLjU4MzMzLDUuNzMzMzMgNy44ODMzMyw3LjE2NjY3IDEwLjAzMzMzLDcuMTY2NjdjMi44NjY2NywwIDUuMDE2NjcsLTAuNzE2NjcgNi40NSwtMS40MzMzM2MwLjcxNjY3LC01LjAxNjY3IDIuODY2NjcsLTEwLjAzMzMzIDcuMTY2NjcsLTEyLjljLTE2LjQ4MzMzLC0zLjU4MzMzIC0yOC42NjY2NywtMTIuOSAtMjguNjY2NjcsLTI4LjY2NjY3YzAsLTcuODgzMzMgMy41ODMzMywtMTUuNzY2NjcgOC42LC0yMS41Yy0wLjcxNjY3LC0xLjQzMzMzIC0xLjQzMzMzLC01LjAxNjY3IC0xLjQzMzMzLC0xMC4wMzMzM2MwLC0yLjg2NjY3IDAsLTcuMTY2NjcgMi4xNSwtMTEuNDY2NjdjMCwwIDEwLjAzMzMzLDAgMjAuMDY2NjcsOS4zMTY2N2MzLjU4MzMzLC0xLjQzMzMzIDguNiwtMi4xNSAxMy42MTY2NywtMi4xNWM1LjAxNjY3LDAgMTAuMDMzMzMsMC43MTY2NyAxNC4zMzMzMywyLjE1YzkuMzE2NjcsLTkuMzE2NjcgMjAuMDY2NjcsLTkuMzE2NjcgMjAuMDY2NjcsLTkuMzE2NjdjMS40MzMzMyw0LjMgMS40MzMzMyw4LjYgMS40MzMzMywxMS40NjY2N2MwLDUuNzMzMzMgLTAuNzE2NjcsOC42IC0xLjQzMzMzLDEwLjAzMzMzYzUuMDE2NjcsNS43MzMzMyA4LjYsMTIuOSA4LjYsMjEuNWMwLDE1Ljc2NjY3IC0xMi4xODMzMywyNS4wODMzMyAtMjguNjY2NjcsMjguNjY2NjdjNC4zLDMuNTgzMzMgNy4xNjY2NywxMC4wMzMzMyA3LjE2NjY3LDE2LjQ4MzMzdjE4LjYzMzMzYzAsMi4xNSAyLjE1LDQuMyA1LjAxNjY3LDMuNTgzMzNjMjYuNTE2NjcsLTEwLjc1IDQ1LjE1LC0zNi41NSA0NS4xNSwtNjYuNjVjMCwtNDMgLTM2LjU1LC03Ni42ODMzMyAtNzkuNTUsLTcxLjY2NjY3eiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+"
+                        /></a>
+                </li>
+                <li class="footerContent rightFooterContent">
+                    <a href="https://img.icons8.com/material-rounded/24/000000/linkedin--v1.png" target="_blank"><img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMzAiIGhlaWdodD0iMzAiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iIzgwODA4MCI+PHBhdGggZD0iTTM1LjgzMzMzLDIxLjVjLTcuOTE5MTcsMCAtMTQuMzMzMzMsNi40MTQxNyAtMTQuMzMzMzMsMTQuMzMzMzN2MTAwLjMzMzMzYzAsNy45MTkxNyA2LjQxNDE3LDE0LjMzMzMzIDE0LjMzMzMzLDE0LjMzMzMzaDEwMC4zMzMzM2M3LjkxOTE3LDAgMTQuMzMzMzMsLTYuNDE0MTcgMTQuMzMzMzMsLTE0LjMzMzMzdi0xMDAuMzMzMzNjMCwtNy45MTkxNyAtNi40MTQxNywtMTQuMzMzMzMgLTE0LjMzMzMzLC0xNC4zMzMzM3pNMzUuODMzMzMsMzUuODMzMzNoMTAwLjMzMzMzdjEwMC4zMzMzM2gtMTAwLjMzMzMzek01NS43NTE2Myw0NS4yNjc1OGMtNi4xNDE4MywwIC05LjgyNjE3LDMuNjkyMDcgLTkuODI2MTcsOC42MDg0YzAsNC45MTYzMyAzLjY4NDc5LDguNTk0NCA5LjIxMDI5LDguNTk0NGM2LjE0MTgzLDAgOS44MjYxNywtMy42NzgwNyA5LjgyNjE3LC04LjU5NDRjMCwtNC45MTYzMyAtMy42ODQ3OSwtOC42MDg0IC05LjIxMDI5LC04LjYwODR6TTQ2LjQxNTM2LDcxLjY2NjY3djUwLjE2NjY3aDE4LjA4NDY0di01MC4xNjY2N3pNNzkuNDIxMjIsNzEuNjY2Njd2NTAuMTY2NjdoMTguMDg0NjR2LTI3LjQyMDljMCwtOC4xNjI4MyA1LjgyMzkyLC05LjMzNjI2IDcuNTcyNTksLTkuMzM2MjZjMS43NDg2NywwIDYuNDI0ODEsMS43NTM5MyA2LjQyNDgxLDkuMzM2MjZ2MjcuNDIwOWgxNy40OTY3NHYtMjcuNDIwOWMwLC0xNS43NDUxNyAtNi45OTY1NywtMjIuNzQ1NzcgLTE1Ljc0NzA3LC0yMi43NDU3N2MtOC43NTA1LDAgLTEzLjQxNzksMi45MTM2OSAtMTUuNzQ3MDcsNi45OTg2OXYtNi45OTg2OXoiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg=="
+                        /></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        /*change the icon colours when hovered over*/
+        /*Linkedin*/
+        document.getElementById('linkedinLink').onmouseover = function() {
+            document.getElementById('linkedIn').src = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSIjMTExMTExIj48L3BhdGg+PGcgZmlsbD0iI2ZmZmZmZiI+PHBhdGggZD0iTTM1LjgzMzMzLDIxLjVjLTcuOTE5MTcsMCAtMTQuMzMzMzMsNi40MTQxNyAtMTQuMzMzMzMsMTQuMzMzMzN2MTAwLjMzMzMzYzAsNy45MTkxNyA2LjQxNDE3LDE0LjMzMzMzIDE0LjMzMzMzLDE0LjMzMzMzaDEwMC4zMzMzM2M3LjkxOTE3LDAgMTQuMzMzMzMsLTYuNDE0MTcgMTQuMzMzMzMsLTE0LjMzMzMzdi0xMDAuMzMzMzNjMCwtNy45MTkxNyAtNi40MTQxNywtMTQuMzMzMzMgLTE0LjMzMzMzLC0xNC4zMzMzM3pNMzUuODMzMzMsMzUuODMzMzNoMTAwLjMzMzMzdjEwMC4zMzMzM2gtMTAwLjMzMzMzek01NS43NTE2Myw0NS4yNjc1OGMtNi4xNDE4MywwIC05LjgyNjE3LDMuNjkyMDcgLTkuODI2MTcsOC42MDg0YzAsNC45MTYzMyAzLjY4NDc5LDguNTk0NCA5LjIxMDI5LDguNTk0NGM2LjE0MTgzLDAgOS44MjYxNywtMy42NzgwNyA5LjgyNjE3LC04LjU5NDRjMCwtNC45MTYzMyAtMy42ODQ3OSwtOC42MDg0IC05LjIxMDI5LC04LjYwODR6TTQ2LjQxNTM2LDcxLjY2NjY3djUwLjE2NjY3aDE4LjA4NDY0di01MC4xNjY2N3pNNzkuNDIxMjIsNzEuNjY2Njd2NTAuMTY2NjdoMTguMDg0NjR2LTI3LjQyMDljMCwtOC4xNjI4MyA1LjgyMzkyLC05LjMzNjI2IDcuNTcyNTksLTkuMzM2MjZjMS43NDg2NywwIDYuNDI0ODEsMS43NTM5MyA2LjQyNDgxLDkuMzM2MjZ2MjcuNDIwOWgxNy40OTY3NHYtMjcuNDIwOWMwLC0xNS43NDUxNyAtNi45OTY1NywtMjIuNzQ1NzcgLTE1Ljc0NzA3LC0yMi43NDU3N2MtOC43NTA1LDAgLTEzLjQxNzksMi45MTM2OSAtMTUuNzQ3MDcsNi45OTg2OXYtNi45OTg2OXoiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg=="
+        }
+        document.getElementById('linkedinLink').onmouseout = function() {
+                document.getElementById('linkedIn').src = "https://img.icons8.com/material-rounded/24/000000/linkedin--v1.png";
+            }
+            /*Twitter*/
+        document.getElementById('twitterLink').onmouseover = function() {
+            document.getElementById('twitter').src = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSIjMTExMTExIj48L3BhdGg+PGcgZmlsbD0iI2ZmZmZmZiI+PHBhdGggZD0iTTE2MC41MzMzMywzOS43NzIxM2MtNS40ODY4LDIuNDM2NjcgLTExLjM4MDY3LDQuMDc2NCAtMTcuNTY2OTMsNC44MTZjNi4zMTgxMywtMy43ODQgMTEuMTYyOCwtOS43NzUzMyAxMy40NDQ2NywtMTYuOTE5MDdjLTUuOTA1MzMsMy41MDMwNyAtMTIuNDUyOCw2LjA0ODY3IC0xOS40MjQ1Myw3LjQyNDY3Yy01LjU3ODUzLC01Ljk0NTQ3IC0xMy41MjQ5MywtOS42NjA2NyAtMjIuMzE5ODcsLTkuNjYwNjdjLTE2Ljg5MDQsMCAtMzAuNTgxNiwxMy42OTY5MyAtMzAuNTgxNiwzMC41ODE2YzAsMi4zOTY1MyAwLjI3NTIsNC43MzU3MyAwLjc5MTIsNi45NjZjLTI1LjQxNTg3LC0xLjI3MjggLTQ3Ljk0Nzg3LC0xMy40NTA0IC02My4wMzgsLTMxLjk1NzZjLTIuNjI1ODcsNC41MTc4NyAtNC4xMzM3Myw5Ljc2OTYgLTQuMTMzNzMsMTUuMzgyNTNjMCwxMC42MDY2NyA1LjM5NTA3LDE5Ljk2OTIgMTMuNTk5NDcsMjUuNDUwMjdjLTUuMDEwOTMsLTAuMTYwNTMgLTkuNzI5NDcsLTEuNTM2NTMgLTEzLjg1MTczLC0zLjgyNDEzYzAsMC4xMzE4NyAwLDAuMjUyMjcgMCwwLjM4NDEzYzAsMTQuODIwNjcgMTAuNTM3ODcsMjcuMTgxNzMgMjQuNTMyOTMsMjkuOTg1MzNjLTIuNTYyOCwwLjY5OTQ3IC01LjI2ODkzLDEuMDcyMTMgLTguMDYxMDcsMS4wNzIxM2MtMS45NjY1MywwIC0zLjg4NzIsLTAuMTk0OTMgLTUuNzUwNTMsLTAuNTQ0NjdjMy44OTI5MywxMi4xNDg5MyAxNS4xODc2LDIwLjk5NTQ3IDI4LjU2OTIsMjEuMjQyYy0xMC40NjMzMyw4LjIwNDQgLTIzLjY1LDEzLjA5NDkzIC0zNy45ODMzMywxMy4wOTQ5M2MtMi40NjUzMywwIC00LjkwMiwtMC4xNDMzMyAtNy4yOTg1MywtMC40M2MxMy41MzY0LDguNjc0NTMgMjkuNjA2OTMsMTMuNzM3MDcgNDYuODgxNDcsMTMuNzM3MDdjNTYuMjU1NDcsMCA4Ny4wMDkwNywtNDYuNjAwNTMgODcuMDA5MDcsLTg3LjAxNDhjMCwtMS4zMjQ0IC0wLjAyODY3LC0yLjY0MzA3IC0wLjA4NiwtMy45NTZjNS45Nzk4NywtNC4zMTcyIDExLjE2ODUzLC05LjcwMDggMTUuMjY3ODcsLTE1LjgyOTczeiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+";
+        }
+        document.getElementById('twitterLink').onmouseout = function() {
+                document.getElementById('twitter').src = "https://img.icons8.com/ios-glyphs/24/000000/twitter--v1.png";
+            }
+            /*Github*/
+        document.getElementById('githubLink').onmouseover = function() {
+            document.getElementById('gitHub').src = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMjQiIGhlaWdodD0iMjQiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSIjMTExMTExIj48L3BhdGg+PGcgZmlsbD0iI2ZmZmZmZiI+PHBhdGggZD0iTTg2LDE3LjJjLTM3Ljk5NDgsMCAtNjguOCwzMC44MDUyIC02OC44LDY4LjhjMCwzMi4yMzg1MyAyMi4xOTk0Nyw1OS4yMTM4NyA1Mi4xMjc0Nyw2Ni42Nzg2N2MtMC4zMjEwNywtMC45Mjg4IC0wLjUyNzQ3LC0yLjAwNjY3IC0wLjUyNzQ3LC0zLjM0MjUzdi0xMS43NTkwN2MtMi43OTIxMywwIC03LjQ3MDUzLDAgLTguNjQ1ODcsMGMtNC43MDcwNywwIC04Ljg5MjQsLTIuMDIzODcgLTEwLjkyMiwtNS43ODQ5M2MtMi4yNTMyLC00LjE3OTYgLTIuNjQzMDcsLTEwLjU3MjI3IC04LjIyNzMzLC0xNC40ODI0Yy0xLjY1NjkzLC0xLjMwMTQ3IC0wLjM5NTYsLTIuNzg2NCAxLjUxMzYsLTIuNTg1NzNjMy41MjYsMC45OTc2IDYuNDUsMy40MTcwNyA5LjIwMiw3LjAwNjEzYzIuNzQwNTMsMy41OTQ4IDQuMDMwNTMsNC40MDg5MyA5LjE1MDQsNC40MDg5M2MyLjQ4MjUzLDAgNi4xOTc3MywtMC4xNDMzMyA5LjY5NTA3LC0wLjY5MzczYzEuODgwNTMsLTQuNzc1ODcgNS4xMzEzMywtOS4xNzMzMyA5LjEwNDUzLC0xMS4yNDg4Yy0yMi45MTA0LC0yLjM1NjQgLTMzLjg0Mzg3LC0xMy43NTQyNyAtMzMuODQzODcsLTI5LjIyODUzYzAsLTYuNjYyMTMgMi44MzgsLTEzLjEwNjQgNy42NTk3MywtMTguNTM1ODdjLTEuNTgyNCwtNS4zODkzMyAtMy41NzE4NywtMTYuMzgwMTMgMC42MDc3MywtMjAuNTY1NDdjMTAuMzA4NTMsMCAxNi41NDA2Nyw2LjY4NTA3IDE4LjAzNzA3LDguNDkxMDdjNS4xMzcwNywtMS43NjAxMyAxMC43Nzg2NywtMi43NTc3MyAxNi43MDY5MywtMi43NTc3M2M1LjkzOTczLDAgMTEuNjA0MjcsMC45OTc2IDE2Ljc1MjgsMi43NjkyYzEuNDc5MiwtMS43OTQ1MyA3LjcxNzA3LC04LjUwMjUzIDE4LjA0ODUzLC04LjUwMjUzYzQuMTk2OCw0LjE5MTA3IDIuMTg0NCwxNS4yMjc3MyAwLjU4NDgsMjAuNjA1NmM0Ljc5MzA3LDUuNDE4IDcuNjEzODcsMTEuODQ1MDcgNy42MTM4NywxOC40OTU3M2MwLDE1LjQ2MjggLTEwLjkxNjI3LDI2Ljg1NDkzIC0zMy43OTIyNywyOS4yMjI4YzYuMjk1MiwzLjI4NTIgMTAuODg3NiwxMi41MTU4NyAxMC44ODc2LDE5LjQ3MDR2MTUuNjc0OTNjMCwwLjU5NjI3IC0wLjEzMTg3LDEuMDI2MjcgLTAuMjAwNjcsMS41MzY1M2MyNi44MDkwNywtOS4zOTY5MyA0Ni4wNjczMywtMzQuODUyOTMgNDYuMDY3MzMsLTY0Ljg3MjY3YzAsLTM3Ljk5NDggLTMwLjgwNTIsLTY4LjggLTY4LjgsLTY4Ljh6Ij48L3BhdGg+PC9nPjwvZz48L3N2Zz4=";
+        }
+        document.getElementById('githubLink').onmouseout = function() {
+            document.getElementById('gitHub').src = "https://img.icons8.com/material-rounded/24/000000/github.png";
+        }
+    </script>
+
+</body>
+
+</html>

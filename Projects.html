@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
+    <title> Projects </title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fa5bf04b5b.js" crossorigin="anonymous"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <link rel="shortcut icon" type="image/icon" sizes="16x16" href="/favicon.icon">
+
+    <style type="text/css">
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        .description {
+            font-weight: bold;
+            font-size: 19px;
+        }
+        
+        #topNav {
+            background-color: white;
+            height: 55px;
+            width: stretch;
+        }
+        
+        #topNav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: white;
+        }
+        
+        #topNav a {
+            color: black;
+        }
+        
+        #topNav a:hover {
+            color: white;
+        }
+        
+        #topNav .dropdown-content a:hover {
+            color: black;
+        }
+        
+        li {
+            float: right;
+        }
+        
+        li a {
+            display: block;
+            padding: 16px 16px;
+            color: black;
+            text-align: center;
+            text-decoration: none;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        a:hover {
+            background-color: #111;
+        }
+        
+        #nameTab {
+            float: left;
+        }
+        
+        li.dropdown {
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        
+        .dropdown-content:hover {
+            color: black;
+        }
+        
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+            color: black;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        /* Style the row div (Main Content)*/
+        
+        #row {
+            padding-left: 400px;
+            padding-right: 400px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        
+        @media screen and (max-width:1500px) {
+            #row {
+                padding-right: 200px;
+                padding-left: 200px;
+            }
+        }
+        /*Style the project Content*/
+        
+        .project h1 {
+            font-family: 'Open Sans', sans-serif;
+            color: red;
+        }
+        
+        .project h1:hover {
+            color: black;
+        }
+        /*Style the Footer*/
+        
+        .footer {
+            background-color: #F1F1F1;
+            text-align: center;
+            padding: 5px;
+            font-family: 'Open Sans', sans-serif;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            border-top: 1px solid gray;
+        }
+        /*style the footer content*/
+        /*remove Styling of ul list*/
+        
+        .footer ul {
+            list-style-type: none;
+        }
+        
+        .footer ul li a {
+            padding: 5px;
+            color: gray;
+        }
+        
+        .footer a:hover {
+            background-color: transparent;
+        }
+        
+        .leftFooterContent {
+            float: left;
+        }
+        
+        .rightFooterContent {
+            float: right;
+            padding-left: 5px;
+            padding-right: 10px;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="topNav">
+        <ul>
+            <li id="nameTab"><a href="index.html">BOLADALE AKINPELU</a></li>
+            <li><a href="index.html">ABOUT</a></li>
+            <li class="dropdown">
+                <a href="#topNav" class="dropbtn">PROJECTS</a>
+                <div class="dropdown-content">
+                    <a href="https://github.com/DaleAkinpelu/Portfolio-Landing-Page" target="_blank">Portfolio</a>
+                    <a href="#" target="_blank">Recipe App</a>
+                    <a href="https://github.com/DaleAkinpelu/Reaction-Tester" target="_blank">Reaction Tester</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div id="row">
+        <div class="project">
+            <a href="https://github.com/DaleAkinpelu/Portfolio-Landing-Page">
+                <h1>Portfolio</h1>
+            </a>
+
+            <p><span class="description">Description:</span> My Portfolio showcases my interests and skills as a Software Engineer. making the Portfolio showcases my proficiency using HTML, CSS and JavaScript.</p>
+            <p> Languages used: <i class="fab fa-html5 fa-lg"></i> <i class="fab fa-css3-alt fa-lg"></i> <i class="fab fa-js fa-lg"></i></p>
+            <hr />
+
+            <a href="">
+                <h1>Recipe App</h1>
+            </a>
+            <p><span class="description">Description:</span> An application that contains recipes with detail for the user. Using the capabilities of Angular to make it a one-page application.</p>
+            <p> Languages used: <i class="fab fa-angular fa-lg"></i> <i class="fab fa-js fa-lg"></i></p>
+            <hr />
+
+            <a href="https://github.com/DaleAkinpelu/Reaction-Tester">
+                <h1>Reaction Tester</h1>
+            </a>
+            <p><span class="description">Description:</span> A small JavaScript game that tests your reaction by trying to click on randomly coloured and positioned shapes on the screen. </p>
+            <p> Languages used: <i class="fab fa-js fa-lg"></i></p>
+            <hr />
+        </div>
+    </div>
+
+    <div class="footer">
+        <div>
+            <ul>
+                <li class="footerContent leftFooterContent">© 2022 Boladale Akinpelu</li>
+                <li class="footerContent rightFooterContent"><a href="mailto:akinpeluboladale@gmail.com"><i class="material-icons">email</i></a></li>
+                <li class="footerContent rightFooterContent"><a href="tel:+6475630821"><i class="material-icons">phone</i></a></li>
+                <li class="footerContent rightFooterContent">
+                    <a href="https://img.icons8.com/ios-glyphs/24/000000/twitter--v1.png" target="_blank"><img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMzAiIGhlaWdodD0iMzAiCnZpZXdCb3g9IjAgMCAyMjYgMjI2IgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDIyNnYtMjI2aDIyNnYyMjZ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iIzgwODA4MCI+PHBhdGggZD0iTTIxMC45MzMzMyw1Mi4yNTg3M2MtNy4yMDk0LDMuMjAxNjcgLTE0Ljk1MzY3LDUuMzU2MiAtMjMuMDgyMTMsNi4zMjhjOC4zMDE3MywtNC45NzIgMTQuNjY3NCwtMTIuODQ0MzMgMTcuNjY1NjcsLTIyLjIzMDg3Yy03Ljc1OTMzLDQuNjAyODcgLTE2LjM2MjQsNy45NDc2NyAtMjUuNTIyOTMsOS43NTU2N2MtNy4zMjk5MywtNy44MTIwNyAtMTcuNzcxMTMsLTEyLjY5MzY3IC0yOS4zMjcyNywtMTIuNjkzNjdjLTIyLjE5MzIsMCAtNDAuMTgyOCwxNy45OTcxMyAtNDAuMTgyOCw0MC4xODI4YzAsMy4xNDg5MyAwLjM2MTYsNi4yMjI1MyAxLjAzOTYsOS4xNTNjLTMzLjM5NTI3LC0xLjY3MjQgLTYzLjAwMTI3LC0xNy42NzMyIC04Mi44MjksLTQxLjk5MDhjLTMuNDUwMjcsNS45MzYyNyAtNS40MzE1MywxMi44MzY4IC01LjQzMTUzLDIwLjIxMTkzYzAsMTMuOTM2NjcgNy4wODg4NywyNi4yMzg2IDE3Ljg2OTA3LDMzLjQ0MDQ3Yy02LjU4NDEzLC0wLjIxMDkzIC0xMi43ODQwNywtMi4wMTg5MyAtMTguMjAwNTMsLTUuMDI0NzNjMCwwLjE3MzI3IDAsMC4zMzE0NyAwLDAuNTA0NzNjMCwxOS40NzM2NyAxMy44NDYyNywzNS43MTU1MyAzMi4yMzUxMywzOS4zOTkzM2MtMy4zNjc0LDAuOTE5MDcgLTYuOTIzMTMsMS40MDg3MyAtMTAuNTkxODcsMS40MDg3M2MtMi41ODM5MywwIC01LjEwNzYsLTAuMjU2MTMgLTcuNTU1OTMsLTAuNzE1NjdjNS4xMTUxMywxNS45NjMxMyAxOS45NTU4LDI3LjU4NzA3IDM3LjUzODYsMjcuOTExYy0xMy43NDgzMywxMC43ODAyIC0zMS4wNzUsMTcuMjA2MTMgLTQ5LjkwODMzLDE3LjIwNjEzYy0zLjIzOTMzLDAgLTYuNDQxLC0wLjE4ODMzIC05LjU4OTkzLC0wLjU2NWMxNy43ODYyLDExLjM5NzkzIDM4LjkwMjEzLDE4LjA0OTg3IDYxLjYwMDA3LDE4LjA0OTg3YzczLjkxNzA3LDAgMTE0LjMyNTg3LC02MS4yMzA5MyAxMTQuMzI1ODcsLTExNC4zMzM0YzAsLTEuNzQwMiAtMC4wMzc2NywtMy40NzI4NyAtMC4xMTMsLTUuMTk4YzcuODU3MjcsLTUuNjcyNiAxNC42NzQ5MywtMTIuNzQ2NCAyMC4wNjEyNywtMjAuNzk5NTN6Ij48L3BhdGg+PC9nPjwvZz48L3N2Zz4="
+                        /></a>
+                </li>
+                <li class="footerContent rightFooterContent">
+                    <a href="https://img.icons8.com/material-rounded/24/000000/github.png" target="_blank"><img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMzAiIGhlaWdodD0iMzAiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iIzgwODA4MCI+PHBhdGggZD0iTTc4LjExNjY3LDE1LjA1Yy0zMi45NjY2NywzLjU4MzMzIC01OS40ODMzMywzMC4xIC02My4wNjY2Nyw2Mi4zNWMtMy41ODMzMywzMy42ODMzMyAxNS43NjY2Nyw2My43ODMzMyA0NS4xNSw3NS4yNWMyLjE1LDAuNzE2NjcgNC4zLC0wLjcxNjY3IDQuMywtMy41ODMzM3YtMTEuNDY2NjdjMCwwIC0yLjg2NjY3LDAuNzE2NjcgLTYuNDUsMC43MTY2N2MtMTAuMDMzMzMsMCAtMTQuMzMzMzMsLTguNiAtMTUuMDUsLTEzLjYxNjY3Yy0wLjcxNjY3LC0yLjg2NjY3IC0yLjE1LC01LjAxNjY3IC00LjMsLTcuMTY2NjdjLTIuMTUsLTAuNzE2NjcgLTIuODY2NjcsLTAuNzE2NjcgLTIuODY2NjcsLTEuNDMzMzNjMCwtMS40MzMzMyAyLjE1LC0xLjQzMzMzIDIuODY2NjcsLTEuNDMzMzNjNC4zLDAgNy44ODMzMyw1LjAxNjY3IDkuMzE2NjcsNy4xNjY2N2MzLjU4MzMzLDUuNzMzMzMgNy44ODMzMyw3LjE2NjY3IDEwLjAzMzMzLDcuMTY2NjdjMi44NjY2NywwIDUuMDE2NjcsLTAuNzE2NjcgNi40NSwtMS40MzMzM2MwLjcxNjY3LC01LjAxNjY3IDIuODY2NjcsLTEwLjAzMzMzIDcuMTY2NjcsLTEyLjljLTE2LjQ4MzMzLC0zLjU4MzMzIC0yOC42NjY2NywtMTIuOSAtMjguNjY2NjcsLTI4LjY2NjY3YzAsLTcuODgzMzMgMy41ODMzMywtMTUuNzY2NjcgOC42LC0yMS41Yy0wLjcxNjY3LC0xLjQzMzMzIC0xLjQzMzMzLC01LjAxNjY3IC0xLjQzMzMzLC0xMC4wMzMzM2MwLC0yLjg2NjY3IDAsLTcuMTY2NjcgMi4xNSwtMTEuNDY2NjdjMCwwIDEwLjAzMzMzLDAgMjAuMDY2NjcsOS4zMTY2N2MzLjU4MzMzLC0xLjQzMzMzIDguNiwtMi4xNSAxMy42MTY2NywtMi4xNWM1LjAxNjY3LDAgMTAuMDMzMzMsMC43MTY2NyAxNC4zMzMzMywyLjE1YzkuMzE2NjcsLTkuMzE2NjcgMjAuMDY2NjcsLTkuMzE2NjcgMjAuMDY2NjcsLTkuMzE2NjdjMS40MzMzMyw0LjMgMS40MzMzMyw4LjYgMS40MzMzMywxMS40NjY2N2MwLDUuNzMzMzMgLTAuNzE2NjcsOC42IC0xLjQzMzMzLDEwLjAzMzMzYzUuMDE2NjcsNS43MzMzMyA4LjYsMTIuOSA4LjYsMjEuNWMwLDE1Ljc2NjY3IC0xMi4xODMzMywyNS4wODMzMyAtMjguNjY2NjcsMjguNjY2NjdjNC4zLDMuNTgzMzMgNy4xNjY2NywxMC4wMzMzMyA3LjE2NjY3LDE2LjQ4MzMzdjE4LjYzMzMzYzAsMi4xNSAyLjE1LDQuMyA1LjAxNjY3LDMuNTgzMzNjMjYuNTE2NjcsLTEwLjc1IDQ1LjE1LC0zNi41NSA0NS4xNSwtNjYuNjVjMCwtNDMgLTM2LjU1LC03Ni42ODMzMyAtNzkuNTUsLTcxLjY2NjY3eiI+PC9wYXRoPjwvZz48L2c+PC9zdmc+"
+                        /></a>
+                </li>
+                <li class="footerContent rightFooterContent">
+                    <a href="https://img.icons8.com/material-rounded/24/000000/linkedin--v1.png" target="_blank"><img alt="svgImg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMzAiIGhlaWdodD0iMzAiCnZpZXdCb3g9IjAgMCAxNzIgMTcyIgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDE3MnYtMTcyaDE3MnYxNzJ6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iIzgwODA4MCI+PHBhdGggZD0iTTM1LjgzMzMzLDIxLjVjLTcuOTE5MTcsMCAtMTQuMzMzMzMsNi40MTQxNyAtMTQuMzMzMzMsMTQuMzMzMzN2MTAwLjMzMzMzYzAsNy45MTkxNyA2LjQxNDE3LDE0LjMzMzMzIDE0LjMzMzMzLDE0LjMzMzMzaDEwMC4zMzMzM2M3LjkxOTE3LDAgMTQuMzMzMzMsLTYuNDE0MTcgMTQuMzMzMzMsLTE0LjMzMzMzdi0xMDAuMzMzMzNjMCwtNy45MTkxNyAtNi40MTQxNywtMTQuMzMzMzMgLTE0LjMzMzMzLC0xNC4zMzMzM3pNMzUuODMzMzMsMzUuODMzMzNoMTAwLjMzMzMzdjEwMC4zMzMzM2gtMTAwLjMzMzMzek01NS43NTE2Myw0NS4yNjc1OGMtNi4xNDE4MywwIC05LjgyNjE3LDMuNjkyMDcgLTkuODI2MTcsOC42MDg0YzAsNC45MTYzMyAzLjY4NDc5LDguNTk0NCA5LjIxMDI5LDguNTk0NGM2LjE0MTgzLDAgOS44MjYxNywtMy42NzgwNyA5LjgyNjE3LC04LjU5NDRjMCwtNC45MTYzMyAtMy42ODQ3OSwtOC42MDg0IC05LjIxMDI5LC04LjYwODR6TTQ2LjQxNTM2LDcxLjY2NjY3djUwLjE2NjY3aDE4LjA4NDY0di01MC4xNjY2N3pNNzkuNDIxMjIsNzEuNjY2Njd2NTAuMTY2NjdoMTguMDg0NjR2LTI3LjQyMDljMCwtOC4xNjI4MyA1LjgyMzkyLC05LjMzNjI2IDcuNTcyNTksLTkuMzM2MjZjMS43NDg2NywwIDYuNDI0ODEsMS43NTM5MyA2LjQyNDgxLDkuMzM2MjZ2MjcuNDIwOWgxNy40OTY3NHYtMjcuNDIwOWMwLC0xNS43NDUxNyAtNi45OTY1NywtMjIuNzQ1NzcgLTE1Ljc0NzA3LC0yMi43NDU3N2MtOC43NTA1LDAgLTEzLjQxNzksMi45MTM2OSAtMTUuNzQ3MDcsNi45OTg2OXYtNi45OTg2OXoiPjwvcGF0aD48L2c+PC9nPjwvc3ZnPg=="
+                        /></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
